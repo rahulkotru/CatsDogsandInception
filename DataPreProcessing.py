@@ -21,3 +21,13 @@ print("Number of cat images:",len(os.listdir(path+'/tmp/PetImages/Cat/')))
 print("Number of dog images:", len(os.listdir(path+'/tmp/PetImages/Dog/')))
 
 #Creating Train-Test-Split Directories
+try:
+    os.mkdir(path+'/tmp/cats-v-dogs')
+    os.mkdir(path+'/tmp/cats-v-dogs/training')
+    os.mkdir(path+'/tmp/cats-v-dogs/testing')
+    os.mkdir(path+'/tmp/cats-v-dogs/training/cats')
+    os.mkdir(path+'/tmp/cats-v-dogs/training/dogs')
+    os.mkdir(path+'/tmp/cats-v-dogs/testing/cats')
+    os.mkdir(path+'/tmp/cats-v-dogs/testing/dogs')
+except OSError:
+    pass
