@@ -2,7 +2,7 @@ import shutil
 import urllib.request
 import zipfile
 import os
-
+import random
 
 path='D:/28_GitHub/Inception V3'
 
@@ -31,3 +31,4 @@ try:
     os.mkdir(path+'/tmp/cats-v-dogs/testing/dogs')
 except OSError:
     pass
+
