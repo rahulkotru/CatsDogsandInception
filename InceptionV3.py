@@ -19,7 +19,7 @@ def modelnet(weights_file):    # Instantiate the model
 
         # freeze the layers
         for layer in pre_trained_model.layers:
-            layer.trainable = True
+            layer.trainable = False
 
         # pre_trained_model.summary()
 
@@ -40,3 +40,4 @@ def modelnet(weights_file):    # Instantiate the model
                     loss='binary_crossentropy',
                     metrics=['acc'])
         return model
+1
