@@ -40,4 +40,4 @@ def modelnet(weights_file):    # Instantiate the model
                     loss='binary_crossentropy',
                     metrics=['acc'])
         return model
-123456
+1234567
